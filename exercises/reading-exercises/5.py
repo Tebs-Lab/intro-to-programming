@@ -15,15 +15,16 @@ def contains(items, item):
 def intersection(list_a, list_b):
     return_value = []
     
-    for outer_item in list_a:
-        if contains(list_b, outer_item) and not contains(return_value, outer_item):
-            return_value.append(outer_item)
+    for item_a in list_a:
+        if contains(list_b, item_a) and not contains(return_value, item_a):
+            return_value.append(item_a)
 
     return return_value
 
 
-# What will the following code print?
-a = [1, 3, 5, 6, 7, 9]
-b = [3, 4, 5, 8, 10, 1]
+# Setup two lists...
+x = [1, 3, 5, 6, 7, 9, 1]
+y = [3, 4, 5, 8, 10, 1]
 
-print(intersection(a, b))
+# What will the following code print?
+print(intersection(x, y))

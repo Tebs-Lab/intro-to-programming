@@ -53,3 +53,6 @@ new_list.append('good')
 new_list.append('people')
 
 print("\n", new_list, len(new_list))
+
+# Micro-Exercise: append three more values to new_list, then loop
+# over those values printing the value AND type of each item in new_list.
