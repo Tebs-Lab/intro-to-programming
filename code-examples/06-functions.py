@@ -17,13 +17,17 @@ def returns_none_and_does_nothing():
     pass
 
 # We call, or envoke, functions with a similar syntax:
-two = compute_two()
-five = add(2, 3)
-nothing = returns_none_and_does_nothing()
+x = compute_two()
+y = add(2, 3)
+z = returns_none_and_does_nothing()
 
-print(two, five, nothing)
+print(x, y, z)
 
 # We can also pass variables as parameters:
-seven = add(two, five)
+q = add(x, y)
+print(q)
 
-print(seven)
+# Micro-Exercise: create a function called fancy_math that
+# accepts 3 parameters, uses math operators to combine them
+# and returns the result of that math. The result should also
+# be a number.

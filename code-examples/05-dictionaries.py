@@ -9,17 +9,19 @@ empty_dictionary = {}
 key_examples = {
     "tyler": 75,
     1: "24",
-    None: [1,2,3]
+    None: [1, 2, 3, 'Gastly Business']
 }
 
-# We can fetch an item from a dictionary using bracket notation
-# similar to lists. We can also use a built in function called 
-# get, which returns None if no element in the dictionary matches.
-
-print(key_examples['tyler'] == key_examples.get('tyler')) # True
-
-# We can also add a new key/value pair using bracket notation:
+# We can also add new key/value pairs using bracket notation:
 key_examples['new_key'] = 'new value'
+
+# We can fetch an item from a dictionary using bracket notation
+# similar to lists. 
+print(key_examples['tyler']) # 75
+
+# We can also use a built in function called get, which 
+# returns None if no element in the dictionary matches.
+print(key_examples.get('tyler'))
 
 # If we try to access a non-existant key with bracket notation
 # we get an error, which is a good reason to use .get
@@ -33,3 +35,8 @@ print(key_examples.get(7)) # prints None
 print('\n===looping===')
 for key, value in key_examples.items():
     print(key, value)
+
+# Micro-Exercise: nested inside of key_examples is the value
+# "Gastly Business". Write a line of code that accesses that value,
+# stores it into a variable, and then prints the value of that variable
+# to a string. You should use "bracket notation" or the .get function

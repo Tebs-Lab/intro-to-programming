@@ -1,12 +1,15 @@
-x = 7
 # We use if, if/else, and if/elif/else blocks to selectively
 # execute code when something is true.
 
 if True:
     print("This executes")
+    print("this also executes")
+
+
 
 if False: 
     print("This never executes")
+    print("this also never executes")
 
 
 # The above are trivial, but using comparison operators makes
@@ -41,3 +44,9 @@ if arbitrary_number > 10 and arbitrary_number < 50:
 
 if arbitrary_number < 10 or arbitrary_number > 30:
     print("The number is less than 10, or more than 30")
+
+# Micro-Exercise: Create a variable, assign it a numerical value
+# then write an if/else statement that will cause the variable
+# to become half as large if it's greater than 100, and twice
+# as large if it's less than 100. Print the variable's value 
+# after the if/else block and test that your code works.

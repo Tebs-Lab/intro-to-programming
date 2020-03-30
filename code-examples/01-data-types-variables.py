@@ -40,3 +40,8 @@ print(type(nothing))
 # And textual data, called strings, are wrapped in quotes
 text = "This is a string."
 print(type(text))
+
+# Micro-Exercise: Create a variable and assign it a value.
+# Then, pick one of the variables defined above and reassign 
+# it to have the same value as the variable you created.
+# Finally, prove your code works with a print statement.

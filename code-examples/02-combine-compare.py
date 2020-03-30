@@ -1,25 +1,16 @@
 # Numbers can be combined using mathematical operators
-two = 1 + 1
-six = 2 * 3
-
-# Variables holding numbers can be used the same way
-three = six / two
-
-# The names of these variables is not understood or considered
-# by the computer. Naming two, six, and three differently does
-# not change the behavior of the above code. But it is harder 
-# to read by a human:
 x = 1 + 1
 y = 2 * 3
-z = y / x
+
+# Variables holding numbers can be used any way numbers can be used
+z = x / y
 
 # We can prove that these computations worked out the same
-# using comparison operators, specifically == to test for 
-# equality:
+# using comparison operators, specifically == to test for equality:
 print('===comparing===')
-print(two == x)
-print(six == y)
-print(three == z)
+print('2 == x', 2 == x)
+print('6 == y', 6 == y)
+print('3 == z', 3 == z)
 
 print() # Just for a blank line in the output
 
@@ -27,15 +18,17 @@ print() # Just for a blank line in the output
 print("1 == '1'", 1 == '1')
 
 # Other common comparisons include <, <=, >, >=
-1 < 2    # True
-10 >= 10 # True
-10 > 10  # False
+print('1 < 2', 1 < 2)    # True
+print('10 >= 10', 10 >= 10) # True
+print('10 > 10', 10 > 10)  # False
+
+print() # For a blank line in the output
 
 # Strings are compared pseudoalphabetically for greater than / less than
-"albert" < "bill" # True
+print('"albert" < "bill"', "albert" < "bill") # True
 
 # HOWEVER, in python ALL capital letters come before ANY lowercase letters
-"B" < "a" # True
+print('"B" < "a"', "B" < "a") # True
 
 # There are additional rules for other characters like $, %, ., and so on
 # that we're ignoring for now.
@@ -45,10 +38,17 @@ print("1 == '1'", 1 == '1')
 x = "hello " + "world." # Concatination, x is "hello world."
 y = "a" * 4 # Duplication, y = "aaaa"
 
+print()
+print(x)
+print(y)
+
 # Finally, we can combine the assignment operator and these math operations
 # using the following shorthands:
-
-x += 1 #  x = x + 1
+x = 4
+x += 3 #  x = x + 1
 x -= 1 #  x = x - 1
-x *= 1 #  x = x * 1
-x /= 1 #  x = x / 1
+x *= 2 #  x = x * 2
+x /= 4 #  x = x / 2
+
+# Micro-Exercise: predict the value of x. Then write a comparison statement 
+# involving x that evaluates to False. Print the result of that comparison.
