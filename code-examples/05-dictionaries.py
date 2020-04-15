@@ -9,7 +9,7 @@ empty_dictionary = {}
 key_examples = {
     "tyler": 75,
     1: "24",
-    None: [1, 2, 3, 'Gastly Business']
+y    None: [1, 2, 3, 'Ghastly Business']
 }
 
 # We can also add new key/value pairs using bracket notation:
@@ -37,6 +37,6 @@ for key, value in key_examples.items():
     print(key, value)
 
 # Micro-Exercise: nested inside of key_examples is the value
-# "Gastly Business". Write a line of code that accesses that value,
+# "Ghastly Business". Write a line of code that accesses that value,
 # stores it into a variable, and then prints the value of that variable
 # to a string. You should use "bracket notation" or the .get function

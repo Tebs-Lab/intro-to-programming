@@ -32,7 +32,7 @@ print(type(t))
 print(type(f))
 
 # There is a special value that means "nothing"
-nothing = None 
+nothing = None
 
 print('\n===None===')
 print(type(nothing))

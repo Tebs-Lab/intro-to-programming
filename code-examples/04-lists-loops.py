@@ -22,6 +22,9 @@ print(l_two[3])
 # What about this?
 print(l_three[-1])
 
+# What about this? (Hint: it's commented out for a reason...)
+# print(l_three[6])
+
 # looping over lists is easy in Python with the "for loop"
 print("\nFor l_one: ")
 for i in l_one:
@@ -40,7 +43,7 @@ for i in l_three:
 # can use the enumerate function for this:
 print("\nenumerate")
 for index, value in enumerate(l_two):
-    print(index, value)
+    print(index, value, l_two[index-1])
 
 # Lists have many useful functions built in that we can use, such as 
 # append for adding an item to the end of a list, and the len function

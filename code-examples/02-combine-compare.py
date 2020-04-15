@@ -3,7 +3,7 @@ x = 1 + 1
 y = 2 * 3
 
 # Variables holding numbers can be used any way numbers can be used
-z = x / y
+z = y / x
 
 # We can prove that these computations worked out the same
 # using comparison operators, specifically == to test for equality:
@@ -45,10 +45,10 @@ print(y)
 # Finally, we can combine the assignment operator and these math operations
 # using the following shorthands:
 x = 4
-x += 3 #  x = x + 1
+x + 3 #  x = x + 3
 x -= 1 #  x = x - 1
 x *= 2 #  x = x * 2
-x /= 4 #  x = x / 2
+x /= 4 #  x = x / 4
 
 # Micro-Exercise: predict the value of x. Then write a comparison statement 
 # involving x that evaluates to False. Print the result of that comparison.
