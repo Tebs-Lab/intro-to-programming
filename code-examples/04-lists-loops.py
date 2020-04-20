@@ -22,6 +22,10 @@ print(l_two[3])
 # What about this?
 print(l_three[-1])
 
+# Bracket notation can also be used to modify values in the list
+l_one[0] = 999
+print(l_one)
+
 # What about this? (Hint: it's commented out for a reason...)
 # print(l_three[6])
 
